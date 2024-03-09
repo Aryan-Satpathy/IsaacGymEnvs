@@ -3,6 +3,9 @@
 [Website](https://developer.nvidia.com/isaac-gym) | [Technical Paper](https://arxiv.org/abs/2108.10470) | [Videos](https://sites.google.com/view/isaacgym-nvidia)
 
 
+### Fork Contribution
+This repo is a fork of the repository [IsaacGymEnvs](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs) to add **6-DOF Stewart Platform** and **SeeSaw Environment**(1-DOF approximation of Stewart Platform), implemented in the IsaacGym framework.
+
 ### About this repository
 
 This repository contains example RL environments for the NVIDIA Isaac Gym high performance environments described [in our NeurIPS 2021 Datasets and Benchmarks paper](https://openreview.net/forum?id=fgFBtYgJQX_)
@@ -83,6 +86,9 @@ python train.py task=Ant headless=True
 
 Ant may take a minute or two to train a policy you can run. When running headlessly, you 
 can stop it early using Control-C in the command line window.
+
+### Running Stewart Platform and SeeSaw Balance
+Stewart platform and SeeSaw are created by setting  `task=Stewart` and `task=SeeSaw` respectively.
 
 ### Loading trained models // Checkpoints
 
